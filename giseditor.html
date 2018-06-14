@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html {
+            -ms-overflow-style:none;
+            overflow:-moz-scrollbars-none;
+        }
+        ::-webkit-scrollbar{width:0px}
+
+        html,body{height:100%}
+    </style>
+    <!-- Required Stylesheets -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Required Javascript -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap-treeview/dist/bootstrap-treeview.min.js"></script>
+    <script>
+        function getTree() {
+            // Some logic to retrieve, or generate tree structure
+            var tree = [
+                {
+                    text: "Parent 1",
+                    nodes: [
+                        {
+                            text: "Child 1",
+                            nodes: [
+                                {
+                                    text: "Grandchild 1"
+                                },
+                                {
+                                    text: "Grandchild 2"
+                                }
+                            ]
+                        },
+                        {
+                            text: "Child 2"
+                        }
+                    ]
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 5"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 4"
+                },
+                {
+                    text: "Parent 2"
+                },
+                {
+                    text: "Parent 3"
+                },
+                {
+                    text: "Parent 4"
+                }
+            ];
+            return tree;
+        }
+        $(function () {
+            $('#tree').treeview({data: getTree()});
+            $('#tree').height($(window).height());
+        });
+
+    </script>
+</head>
+<body>
+<div class="container-fluid" style="height: 100%;">
+    <div class="row" >
+        <div class="col-md-3" style="overflow:hidden">
+            <div id="tree" style="overflow:scroll"></div>
+        </div>
+        <div class="col-md-9">
+            hhhhhhhhhhhhhhhhhhhhhhh
+        </div>
+    </div>
+</div>
+</body>
+</html>
